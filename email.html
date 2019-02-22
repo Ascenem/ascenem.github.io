@@ -1,0 +1,85 @@
+<!DOCTYPE html>  
+ <html>
+<head>
+<title>Контакты</title>
+<style>
+*{
+	box-sizing:border-box
+}
+
+body{
+	margin:auto;
+	background:#ffffff;
+}
+
+nav{
+	background:#ffd1b3;
+	width:100%;
+	overflow:auto;	
+}
+
+ul{
+	margin:0;
+	padding:0; 
+	list-style:none;
+}
+
+li{
+	float:left;
+}
+
+nav a{
+width:120px;
+display:block;
+text-align:center;
+text-align:center;
+background:#ffd1b3;
+font-size:17px;
+color:white;
+padding:20px 10px;
+font-family:arial
+}
+
+nav a:hover{
+	background-color:skyblue;
+	color:black;
+}
+
+.h1{
+	text-align:center;
+	Font-style:italic;
+
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+
+<body>
+<nav>
+	<ul>
+		<li><a href="index.html">Галерея</a></li>
+		<li><a href="index1.html">Контакт</a></li>
+		<li><a href="index2.html">Автор</a></li>
+	</ul>
+</nav>
+
+<div class="contact-title">
+		<h1>Скажи Привет</h1>
+		<h2>Мы всегда готовы </h2>
+	
+</div>
+
+	<div class="contact-form">
+		<form action="send.php" method="post">
+			<input type="text" name="fio" placeholder="Укажите ФИО" required>
+			<input type="text" name="email" placeholder="Укажите e-mail" required>
+			<input type="submit" value="Отправить">
+		</form>
+	
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>  
+ <html>
+<head>
+	<title>Sounddy</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+*{
+	box-sizing:border-box
+}
+
+header {
+background: url(logo.png) no-repeat;
+padding: 45px 0 20px 40px;
+} 
+
+body{
+	margin:0;
+	background:#ffffff;
+}
+
+nav{
+	background:#ffd1b3;
+	width:100%;
+	overflow:auto;	
+}
+
+ul{
+	margin:0;
+	padding:0; 
+	list-style:none;
+}
+
+li{
+	float:left;
+}
+
+nav a{
+width:120px;
+display:block;
+text-align:center;
+text-align:center;
+background:#ffd1b3;
+font-size:17px;
+color:white;
+padding:20px 10px;
+font-family:arial
+}
+
+nav a:hover{
+	background-color:#DB7093;
+	color:black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) 
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) 
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+	
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect h2 {
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+font-size:17px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+}
+.header{
+   background: url(img/logo.png) no-repeat;
+}
+</style>
+
+</head>
+
+<body>
+<nav>
+	<ul>
+		<li><a href="index.html">Галерея</a></li>
+		<li><a href="index1.html">Контакт</a></li>
+		<li><a href="index2.html">Автор</a></li>
+	</ul>
+</nav>
+
+<!-- Photo Grid -->
+<div class="row">
+
+  <div class="column">
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="">
+      <a href="index.html"><img class="img-responsive" src="logo.png" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2></h2>
+           <a class="info" href="index.html"></a>
+        </div>
+    </div>
+</div>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="index3.html"><img class="img-responsive" src="2.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="index3.html">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="3.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="#"><img class="img-responsive" src="4.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="5.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="6.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="7.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  </div>
+  
+  <div class="column">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="8.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="9.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="10.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="11.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="1.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="2.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="11.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  </div>  
+  
+  <div class="column">
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="14.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="15.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="16.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="6.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="17.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="8.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+	    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="6.jpeg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>	
+</div>
+  </div>
+  
+  
+  
+  <div class="column">
+     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="10.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="11.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+   <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="1.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="2.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="3.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="4.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+      <a href="1.html"><img class="img-responsive" src="9.jpg" style="width:100%" alt=""></a>
+        <div class="overlay">
+           <h2>	Увидеть больше</h2>
+           <a class="info" href="#">Нажми сюда</a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
